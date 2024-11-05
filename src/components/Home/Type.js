@@ -6,14 +6,18 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
+          "אנחנו מהנדסי תוכנה המספקים שירותים כמו:",
+          "בניית אתרים מקצועית",
+          "פיתוח אפליקציות",
+          "פיתוח מערכות תוכנה מותאמות אישית",
+          "פתרונות אינטרנט מתקדמים",
+          "אפליקציות ייחודיות בהתאם לצרכי הלקוח"
         ],
+        
+        
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 70,
       }}
     />
   );
