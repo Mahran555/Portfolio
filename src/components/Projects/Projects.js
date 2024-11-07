@@ -15,7 +15,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Our Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
@@ -23,40 +23,32 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
+              imgPaths={[chatify, leaf, emotion]} // Array of images for Chatify
               title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Has features for real-time messaging, image sharing, and message reactions."
+              status="Published" // Status of the project
+              liveUrl="https://chatify-49.web.app/" // Live URL for the project
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
+              imgPaths={[bitsOfCode, editor, suicide]} // Array of images for Bits-0f-C0de
               title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              description="My personal blog page built with Next.js and Tailwind CSS that renders markdown content. Supports dark mode and easy blogging."
+              status="Published" // Status of the project
+              liveUrl="https://blogs.soumya-jit.tech/" // Live URL for the project
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
+              imgPaths={[editor, chatify, leaf]} // Array of images for Editor.io
               title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              description="Online code and markdown editor built with React.js. Supports HTML, CSS, and JS with instant preview and auto-save via Local Storage."
+              status="Coming Soon" // Status of the project
             />
           </Col>
-
-
-
-
         </Row>
       </Container>
     </Container>
