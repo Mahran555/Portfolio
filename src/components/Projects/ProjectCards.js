@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Carousel, Modal, Button } from "react-bootstrap";
-import "./ProjectCard.css";
+import "./ProjectCard.css"; // Ensure your CSS file is linked
 
 function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
   const [show, setShow] = useState(false);
@@ -42,23 +42,21 @@ function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
+          <div className="project-card-footer">
+            <p><strong>Status:</strong> {status}</p>
+            {status === "Published" && liveUrl && (
+              <Button
+                variant="primary"
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="live-button"
+              >
+                View Live
+              </Button>
+            )}
+          </div>
         </Card.Body>
-        
-        {/* Fixed status and button section */}
-        <div className="project-card-footer">
-          <p><strong>Status:</strong> {status}</p>
-          {status === "Published" && liveUrl && (
-            <Button
-              variant="primary"
-              href={liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="live-button"
-            >
-              View Live
-            </Button>
-          )}
-        </div>
       </Card>
 
       {/* Modal with transparent background and larger image */}
@@ -73,11 +71,7 @@ function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
           <img
             src={imgPaths[currentIndex]}
             alt="Large view"
-            style={{
-              width: "160%",
-              maxWidth: "700px",
-              margin: "0 10px",
-            }}
+            className="enlarged-image"  // Apply the CSS class here
           />
           <Button variant="secondary" onClick={handleNext}>&gt;</Button>
         </Modal.Body>

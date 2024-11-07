@@ -29,4 +29,18 @@
   .live-button {
     margin-top: 10px;
   }
-  
+  /* Default styling for larger screens */
+.enlarged-image {
+  width: 130%;       /* Default width for enlarged image */
+  max-width: 700px; /* Default max width */
+  margin: 0 10px;
+}
+
+/* Mobile-specific styling for enlarged image */
+@media (max-width: 768px) { /* Adjust 768px as needed for your target device */
+  .enlarged-image {
+    width: 100%;       /* Full width for mobile */
+    max-width: 90%;    /* Optional: slightly reduce max width on mobile */
+    margin: 0 5px;     /* Smaller margin for better fit */
+  }
+}
