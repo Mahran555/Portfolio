@@ -1,23 +1,23 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
+import { useTranslation } from "react-i18next";
 function Type() {
+  const{t}=useTranslation()
   return (
     <Typewriter
       options={{
         strings: [
-          "אנחנו מהנדסי תוכנה המספקים שירותים כמו:",
-          "בניית אתרים מקצועית",
-          "פיתוח אפליקציות",
-          "פיתוח מערכות תוכנה מותאמות אישית",
-          "פתרונות אינטרנט מתקדמים",
-          "אפליקציות ייחודיות בהתאם לצרכי הלקוח"
+          t("companydescription.line1"),
+          t("companydescription.line2"),
+          t("companydescription.line3"),
+          t("companydescription.line4"),
         ],
         
         
         autoStart: true,
         loop: true,
-        deleteSpeed: 70,
+        deleteSpeed: 200,
+        
       }}
     />
   );

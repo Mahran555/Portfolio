@@ -8,28 +8,28 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 function Home2() {
+  const{t}=useTranslation()
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
           <h1 style={{ fontSize: "2.6em", textAlign: "right" }}>
-              הרשו לנו <span className="purple"> להציג </span> את עצמנו
+          {t("homeabout.title")}
           </h1>
 
             <p className="home-about-body">
-                אנחנו חברת, מהנדסי תוכנה אנו מתמחים במתן שירותים
+            {t("homeabout.line1")}
                 <br />
-                <br />שירותים כמו
                 <i>
-                    <b className="purple">בניית אתרים, פיתוח אפליקציות לנייד ולווב, מערכות תוכנה מותאמות אישית ופתרונות אינטרנט מתקדמים </b>
+                    <b className="purple">{t("homeabout.line2")}</b>
                 </i>
                 <br />
+                {t("homeabout.line3")}
                 <br />
-                עם ניסיון עשיר בתחום, אנו מחויבים לספק פתרונות מקצועיים ואיכותיים המותאמים לצרכי הלקוח
-                <br />
+                {t("homeabout.line4")}
             </p>
             </Col>
           <Col md={4} className="myAvtar">

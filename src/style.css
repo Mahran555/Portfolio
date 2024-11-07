@@ -83,6 +83,7 @@ button:focus {
 }
 
 .navbar {
+  direction: ltr!important; /* Set navbar to always be left-to-right */
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
@@ -142,6 +143,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
+    direction: ltr!important;
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
@@ -744,3 +746,41 @@ button:focus {
 .home-about-body {
   text-align: right; /* Aligns text to the right */
 }
+/**/
+.language-selector {
+  margin: 0 10px;
+  margin-top: 12px;
+}
+
+.language-dropdown {
+  background-color: transparent; /* Transparent background for the select */
+  color: white; /* White text for the selected item */
+  border: none; /* No borders */
+  padding: 6px;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+/* Style the dropdown menu (the options) */
+.language-dropdown option {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for options */
+  color: white; /* White text */
+}
+
+/* Remove the default focus outline on options (some browsers) */
+.language-dropdown option:focus {
+  outline: none;
+}
+/* Aligns text in body and all descendants */
+body[dir="ltr"], body[dir="ltr"] * {
+  text-align: left !important;
+}
+
+body[dir="rtl"], body[dir="rtl"] * {
+  text-align: right !important;
+}
+

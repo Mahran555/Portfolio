@@ -15,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import LanguageSelector from "./language-selector";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -80,6 +81,9 @@ function NavBar() {
                 />{" "}
                 Projects
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+            <LanguageSelector/>
             </Nav.Item>
 
 
