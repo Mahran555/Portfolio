@@ -1,46 +1,78 @@
-/* Make the modal background transparent */
+.project-card-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Fixed height for all cards */
+  filter: none !important; /* Explicitly remove any filter */
+  opacity: 1 !important; /* Ensure full opacity */
+  transition: none !important; /* Completely disable transition */
+}
+
+.project-card-view:hover,
+.project-card-view:focus,
+.project-card-view:active,
+.project-card-view:focus-within {
+  transform: scale(1.02); /* Subtle zoom effect on hover */
+  filter: none !important; /* Ensure no filter is applied on hover */
+  opacity: 1 !important; /* Ensure full opacity on hover */
+  transition: none !important; /* Disable transition on hover */
+}
+
+/* Card footer styles */
+.project-card-footer {
+  padding: 10px;
+  background-color: transparent;
+  border-top: 1px solid #a24dd386;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  filter: none !important; /* Prevent blur */
+  opacity: 1 !important; /* Prevent opacity change */
+  transition: none !important; /* Disable any transition */
+}
+
+/* Styling for buttons and text inside the card body */
+.project-card-view .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 15px;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: none !important; /* Disable any transition */
+}
+
+.project-card-view .card-title,
+.project-card-view .card-text,
+.live-button {
+  flex-grow: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  filter: none !important; /* Ensure no blur */
+  opacity: 1 !important; /* Ensure full opacity */
+  transition: none !important; /* Disable transition */
+}
+
+/* Remove any blur or opacity from modal content as well */
 .custom-modal .modal-content {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-  }
-  
-  /* Optional: Make the backdrop semi-transparent */
-  .custom-modal .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
-  }
-  .project-card-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-  }
-  
-  .project-card-footer {
-    padding: 10px;
-    background-color: transparent; /* Optional background color for footer */
-    border-top: 1px solid #a24dd386; /* Optional border for separation */
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .live-button {
-    margin-top: 10px;
-  }
-  /* Default styling for larger screens */
-.enlarged-image {
-  width: 130%;       /* Default width for enlarged image */
-  max-width: 700px; /* Default max width */
-  margin: 0 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  filter: none !important; /* No blur */
+  opacity: 1 !important; /* Full opacity */
+  transition: none !important; /* Disable any transition */
+}
+
+.custom-modal .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+  transition: none !important; /* Disable any transition */
 }
 
 /* Mobile-specific styling for enlarged image */
-@media (max-width: 768px) { /* Adjust 768px as needed for your target device */
+@media (max-width: 768px) {
   .enlarged-image {
-    width: 100%;       /* Full width for mobile */
-    max-width: 90%;    /* Optional: slightly reduce max width on mobile */
-    margin: 0 5px;     /* Smaller margin for better fit */
+    width: 100%;
+    max-width: 90%;
+    margin: 0 5px;
   }
 }

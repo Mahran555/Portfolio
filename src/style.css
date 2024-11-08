@@ -553,6 +553,9 @@ button:focus {
 }
 
 .tech-icons {
+  display: flex !important; /* Ensures flexbox layout */
+  align-items: center !important;
+  justify-content: center !important;
   font-size: 4.5em !important;
   margin: 15px !important;
   padding: 10px !important;
@@ -782,5 +785,16 @@ body[dir="ltr"], body[dir="ltr"] * {
 
 body[dir="rtl"], body[dir="rtl"] * {
   text-align: right !important;
+}
+/* Adjust the size of the logo */
+.logo {
+  width: 200px !important; /* Set to a larger width, adjust as needed */
+  height: auto !important; /* Maintains aspect ratio */
+  max-width: 100%; /* Ensures it doesn’t overflow container */
+}
+
+/* Ensure Navbar.Brand has enough space if it's constrained */
+.navbar-brand {
+  max-width: none; /* Removes any constraints */
 }
 
