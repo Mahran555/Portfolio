@@ -39,7 +39,12 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         title2:"Works",
                         des:"here are a few our projects",
                 },
-                
+                navbar:{
+                    home:"Home",
+                    about:"About",
+                    contact:"Contact",
+                    projects:"Projects",
+                },
             },
         },
         ar:{
@@ -76,6 +81,13 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     title2:"الأخيرة",
                     des: "إليكم بعض مشاريعنا",
                 },
+                navbar: {
+                    home: "الرئيسية",
+                    about: "من نحن",
+                    contact: "اتصل بنا",
+                    projects: "المشاريع",
+                },
+            
                 
                 
             },
@@ -112,6 +124,12 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     title: "העבודות האחרונות",
                     title2:"שלנו",
                     des: "כאן תוכלו לראות כמה מהפרויקטים שלנו",
+                },
+                navbar: {
+                    home: "בית",
+                    about: "אודות",
+                    contact: "צור קשר",
+                    projects: "פרויקטים",
                 },
                 
                 

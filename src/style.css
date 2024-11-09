@@ -749,35 +749,106 @@ button:focus {
 .home-about-body {
   text-align: right; /* Aligns text to the right */
 }
-/**/
+/*language selector edit*/
 .language-selector {
-  margin: 0 10px;
-  margin-top: 12px;
-}
-
-.language-dropdown {
-  background-color: transparent; /* Transparent background for the select */
-  color: white; /* White text for the selected item */
-  border: none; /* No borders */
-  padding: 6px;
-  border-radius: 4px;
-  outline: none;
-  appearance: none;
-  font-size: 16px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+  color: white;
   cursor: pointer;
- 
+  padding: 0.8rem 1rem;
+  transition: color 0.3s ease-out;
 }
 
-/* Style the dropdown menu (the options) */
-.language-dropdown option {
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for options */
-  color: white; /* White text */
+/* Language Icon Styling */
+.language-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  filter: invert(100%) brightness(200%);
+  vertical-align: middle;
 }
 
-/* Remove the default focus outline on options (some browsers) */
-.language-dropdown option:focus {
-  outline: none;
+/* Dropdown Toggle Styling */
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
 }
+
+/* Dropdown Icon Styling */
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+  filter: invert(100%) brightness(200%);
+}
+
+/* Popup Menu Styling */
+.language-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  margin-top: 0.3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  width: 120px; /* Adjust width as needed */
+  
+  /* Animation */
+  animation: popup-slide 0.3s ease forwards;
+  opacity: 0; /* Start invisible */
+}
+
+/* Slide-down & fade-in animation */
+@keyframes popup-slide {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px); /* Start slightly above */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Slide into place */
+  }
+}
+
+/* Individual Option Styling */
+.language-option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-option:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover underline effect for Language Selector */
+.language-selector::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: #c95bf5;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-out;
+}
+
+.language-selector:hover::after {
+  width: 100%;
+}
+
+
+/**/
 /* Aligns text in body and all descendants */
 body[dir="ltr"], body[dir="ltr"] * {
   text-align: left !important;

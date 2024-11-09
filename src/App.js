@@ -3,6 +3,7 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Contact from "./components/Contact/contact";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
