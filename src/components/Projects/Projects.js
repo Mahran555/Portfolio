@@ -2,13 +2,35 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+
+//manager imports
+import employeeList from "../../Assets/ManagerProject/employee list.png";
+import homePage2 from "../../Assets/ManagerProject/home page 2.png";
+import homePage from "../../Assets/ManagerProject/home page.png";
+import workSchedulePage from "../../Assets/ManagerProject/work schedule page.png";
 import { useTranslation } from "react-i18next";
+
+//Riyda app imports
+import login from "../../Assets/RiydaApp/login.png";
+import map from "../../Assets/RiydaApp/map.png";
+import paying from "../../Assets/RiydaApp/paying.png";
+import reservationsInfo from "../../Assets/RiydaApp/reservations info.png";
+import reservationsSchedule from "../../Assets/RiydaApp/reservations schedule.png";
+import serviceInfo from "../../Assets/RiydaApp/service info.png";
+import services from "../../Assets/RiydaApp/services.png";
+import sidebar from "../../Assets/RiydaApp/sidebar.png";
+
+
+// Tmrdparts imports
+import aboutUs from "../../Assets/Tmrdparts/about us.png";
+import contactUs from "../../Assets/Tmrdparts/contact us.png";
+import Homepage from "../../Assets/Tmrdparts/homepage.png";
+import Homepage2 from "../../Assets/Tmrdparts/homepage2.png";
+import Homepage3 from "../../Assets/Tmrdparts/homepage3.png";
+import pickingTruckModel from "../../Assets/Tmrdparts/picking truck model.png";
+import productsPage from "../../Assets/Tmrdparts/products page.png";
+
 function Projects() {
   const{t}=useTranslation()
   return (
@@ -24,30 +46,29 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[chatify, leaf, emotion]} // Array of images for Chatify
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Has features for real-time messaging, image sharing, and message reactions."
-              status="Published" // Status of the project
-              liveUrl="https://chatify-49.web.app/" // Live URL for the project
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPaths={[bitsOfCode, editor, suicide]} // Array of images for Bits-0f-C0de
-              title="Bits-0f-C0de"
-              description="My personal blog page built with Next.js and Tailwind CSS that renders markdown content. Supports dark mode and easy blogging."
-              status="Published" // Status of the project
-              liveUrl="https://blogs.soumya-jit.tech/" // Live URL for the project
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPaths={[editor, chatify, leaf]} // Array of images for Editor.io
-              title="Editor.io"
-              description="Online code and markdown editor built with React.js. Supports HTML, CSS, and JS with instant preview and auto-save via Local Storage."
+              imgPaths={[login, map, paying, reservationsInfo, reservationsSchedule, serviceInfo, services, sidebar]} // Array of images for RiydaApp
+              title="Riyda App"
+              description="A convenient app for booking services like stadiums, swimming pools, and more, built using Flutter and Firebase. Users can reserve, pay securely, and view past bookings with ease"
               status="Coming Soon" // Status of the project
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPaths={[homePage,employeeList, homePage2,workSchedulePage]} // Array of images for Bits-0f-C0de
+              title="Manager System"
+              description="A streamlined website for managing employee data, schedules, salaries, and vacation requests with visual insights for efficient workforce management."
+              status="Coming Soon" // Status of the project
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPaths={[Homepage,aboutUs, contactUs, Homepage2, Homepage3, pickingTruckModel, productsPage]} // Array of images for Tmrdparts
+              title="Tmrdparts Website"
+              description="A comprehensive catalog showcasing truck parts for sale, organized into easy-to-navigate categories, helping customers quickly find parts they need for various truck models."
+              status="Published" // Status of the project
+              liveUrl="https://tmrdparts.com"
             />
           </Col>
         </Row>
