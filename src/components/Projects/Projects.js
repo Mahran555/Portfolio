@@ -15,7 +15,6 @@ import { useTranslation } from "react-i18next";
 import login from "../../Assets/RiydaApp/login.png";
 import map from "../../Assets/RiydaApp/map.png";
 import paying from "../../Assets/RiydaApp/paying.png";
-import reservationsInfo from "../../Assets/RiydaApp/reservations info.png";
 import reservationsSchedule from "../../Assets/RiydaApp/reservations schedule.png";
 import serviceInfo from "../../Assets/RiydaApp/service info.png";
 import services from "../../Assets/RiydaApp/services.png";
@@ -46,7 +45,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPaths={[login, map, paying, reservationsInfo, reservationsSchedule, serviceInfo, services, sidebar]} // Array of images for RiydaApp
+              imgPaths={[map,services, sidebar, paying, reservationsSchedule,login, serviceInfo]} // Array of images for RiydaApp
               title="Riyda App"
               description="A convenient app for booking services like stadiums, swimming pools, and more, built using Flutter and Firebase. Users can reserve, pay securely, and view past bookings with ease"
               status="Coming Soon" // Status of the project
@@ -58,10 +57,11 @@ function Projects() {
               imgPaths={[homePage,employeeList, homePage2,workSchedulePage]} // Array of images for Bits-0f-C0de
               title="Manager System"
               description="A streamlined website for managing employee data, schedules, salaries, and vacation requests with visual insights for efficient workforce management."
-              status="Coming Soon" // Status of the project
+              status="Published" // Status of the project
+              liveUrl="https://github.com/shadi26/reservemanager"
             />
           </Col>
-
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPaths={[Homepage,aboutUs, contactUs, Homepage2, Homepage3, pickingTruckModel, productsPage]} // Array of images for Tmrdparts
