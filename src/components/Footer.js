@@ -1,11 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa"; // Importing WhatsApp, Facebook, and Instagram icons
 
 function Footer() {
   let date = new Date();
@@ -14,22 +9,40 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Special Thanks to SB</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} S.M</h3>
+          <h3>Copyright © {year} Vynix</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-
             <li className="social-icons">
               <a
-                href=""
+                href="https://wa.me/YOUR_PHONE_NUMBER"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                <FaWhatsapp />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.facebook.com/YOUR_FACEBOOK_PAGE"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
               </a>
             </li>
           </ul>

@@ -45,6 +45,32 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     contact:"Contact",
                     projects:"Projects",
                 },
+                contactpage:{
+                    title:"Contact Us",
+                    des1:"Get in touch with us to discuss your project.",
+                    des2:"Our team at Vynix is ready to help bring your ideas to life with innovative solutions.",
+                    email:"Email",
+                    phone:"Phone",
+                    address:"Address",
+
+                },
+                contactpagecard:{
+                    nametitle:"Name",
+                    nameplaceholder:"Enter your name",
+                    emailtitle:"Email",
+                    emailplaceholder:"youremail@example...",
+                    messagetitle:"Message",
+                    messageplaceholder:"Enter your message",
+                    sendbtn:"Send",
+
+                },
+                contactpagealert:{
+                        errorname1:"Please enter your name.",
+                        erroremail:"Please enter a valid email address.",
+                        errormsg:"Please enter a message.",
+                        succalert:"Thank you! Your message has been sent successfully, we will contact you soon.",
+                        failedalert:"Failed to send message, please try again.",
+                },
             },
         },
         ar:{
@@ -87,7 +113,32 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     contact: "اتصل بنا",
                     projects: "المشاريع",
                 },
-            
+                contactpage:{
+                    title: "تواصل معنا",
+                    des1: "تواصل معنا لمناقشة مشروعك.",
+                    des2: "فريقنا في فاينيكس جاهز لمساعدتك في تحويل أفكارك إلى واقع من خلال حلول مبتكرة.",
+                    email: "البريد الإلكتروني",
+                    phone: "الهاتف",
+                    address: "العنوان",
+
+                },
+                contactpagecard:{
+                    nametitle: "الاسم",
+                    nameplaceholder: "أدخل اسمك",
+                    emailtitle: "البريد الإلكتروني",
+                    emailplaceholder: "youremail@example...",
+                    messagetitle: "الرسالة",
+                    messageplaceholder: "أدخل رسالتك",
+                    sendbtn: "إرسال",
+
+                },
+                contactpagealert:{
+                    errorname1:"يرجى إدخال اسمك",
+                    erroremail:"يرجى إدخال عنوان بريد إلكتروني صالح",
+                    errormsg:"يرجى إدخال رسالة",
+                    succalert: "شكرًا لك! تم إرسال رسالتك بنجاح، سنتواصل معك قريبًا.",
+                    failedalert: "فشل في إرسال الرسالة، يرجى المحاولة مرة أخرى.",
+            },
                 
                 
             },
@@ -132,7 +183,32 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     projects: "פרויקטים",
                 },
                 
-                
+                contactpage:{
+                    title: "צור קשר",
+                    des1: "צרו קשר כדי לדון בפרויקט שלכם.",
+                    des2: "הצוות שלנו בויניקס מוכן לעזור להביא את הרעיונות שלכם לחיים עם פתרונות חדשניים.",
+                    email: "אימייל",
+                    phone: "טלפון",
+                    address: "כתובת",
+
+                },
+                contactpagecard:{
+                    nametitle: "שם",
+                    nameplaceholder: "הזן את שמך",
+                    emailtitle: "אימייל",
+                    emailplaceholder: "youremail@example...",
+                    messagetitle: "הודעה",
+                    messageplaceholder: "הזן את הודעתך",
+                    sendbtn: "שלח",
+
+                },
+                contactpagealert:{
+                    errorname1:"אנא הזן את שמך",
+                    erroremail:"אנא הזן כתובת אימייל תקינה",
+                    errormsg:"אנא הזן הודעה",
+                    succalert: "תודה! ההודעה שלך נשלחה בהצלחה, נחזור אליך בקרוב.",
+                    failedalert:"שליחת ההודעה נכשלה, אנא נסה שוב.",
+            },
             },
         },
 

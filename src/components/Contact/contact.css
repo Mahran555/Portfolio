@@ -1,93 +1,97 @@
-/* Full-height wrapper for contact page */
-.contact-page-wrapper {
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 60px; /* Space for footer */
-    display: flex;
-    flex-direction: column;
-  }
+
   
   /* Contact section for contact page only */
   .contact-page-section {
-    flex: 1;
+    
+    position: relative !important;
     padding-top: 150px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
   }
   
-  /* Contact page title styling */
-  .contact-page-title {
-    color: var(--imp-text-color) !important;
-    font-size: 2.6em;
-    text-align: right;
-  }
-  
-  /* Contact description styling */
-  .contact-page-description {
-    font-size: 1.2em;
-    color: white;
-    text-align: right;
-  }
-  
-  /* Contact body text styling */
-  .contact-page-body {
-    font-size: 1em;
-    color: white;
-    text-align: right;
-  }
-  
-  /* Contact information section styling */
-  .contact-page-info {
-    color: white;
-    font-size: 1.1em;
-  }
   
   /* Contact form container styling */
   .contact-form {
-    background-color: rgba(23, 21, 41, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 10;
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  color: white !important;
+  background-color: transparent !important;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
   }
   
   /* Contact form labels styling */
   .contact-page-label {
     color: var(--imp-text-color);
-  }
+      color: white; /* Change text color to white */
+      font-size: 1.1em; /* Adjust font size for a slightly larger text */
+
   
-  /* Contact input fields styling */
-  .contact-input {
-    background-color: transparent;
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
   }
-  
-  /* Focus styling for contact input fields */
-  .contact-input:focus {
-    background-color: transparent;
-    color: white;
-    box-shadow: none;
-    border-color: rgba(255, 255, 255, 0.8); /* Slightly brighter border on focus */
-  }
-  
+
+
+ /* Contact input fields styling */
+.contact-input {
+  background-color: rgba(255, 255, 255, 0.361) !important; /* Slight transparency */
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid rgba(255, 255, 255, 0.6) !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  margin-bottom: 15px !important;
+  transition: background-color 0.3s ease !important; /* Smooth transition effect */
+}
+
+/* Focus styling for contact input fields */
+.contact-input:focus {
+  background-color: white !important; /* Solid white background on focus */
+  color: rgb(16, 1, 1) !important;
+  box-shadow: none !important;
+  border-color: rgba(255, 255, 255, 0.8) !important; /* Slightly brighter border on focus */
+}
+
+::placeholder {
+  color: rgba(237, 233, 233, 0.893) !important; /* Light color for the placeholder */
+  opacity: 1 !important; /* Ensures the color is applied */
+}
+/* Change placeholder color on focus */
+.contact-input:focus::placeholder {
+  color: rgba(16, 1, 1, 0.5) !important; /* Darker color for placeholder on focus */
+}
   /* Contact form button styling */
   .contact-btn {
-    background-color: var(--imp-text-color);
-    border: none;
-    transition: background-color 0.3s ease;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    margin-top: 50px;
+    background-color: var(--imp-text-color) !important;
+    border: none !important;
+    transition: background-color 0.3s ease !important;
+    color: white !important;
+    padding: 15px 30px !important;
+    font-size: 1.2em !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+
+    /* Flexbox centering */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+
+    /* Set specific height */
+    height: 40px !important; /* Adjust height as needed */
+    line-height: 1.2 !important;
+}
+
   
   .contact-btn:hover {
     background-color: #a24dd386;
   }
-  
+  .custom-alert {
+    background-color: #a24dd386 !important; /* Custom background color */
+    color: white !important; /* White text */
+    border: none !important; /* Remove border */
+    font-size: 1em !important; /* Adjust font size if needed */
+    padding: 15px !important; /* Optional: Add padding for spacing */
+    border-radius: 5px !important; /* Optional: Add border-radius for rounded corners */
+    text-align: center !important; /* Center-align text */
+}
