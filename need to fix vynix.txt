@@ -1,17 +1,20 @@
 
 
-4-adding info on our projects that we made in the projects page (optional to add link for the github)
-5-chnging the pictures in the home page and fix mobile design in home page(problem from the picture)
-6-adding some stuff in the home page to look better its small atm
-9-fix the header on the phone 
-10-fix the logo color to be more puble 
+-adding some stuff in the home page to look better its small atm
+-maybe the text in each page mobile view need to be orgnized better
+
+
+--------data fixes----------
+-fix pictures in projects page remove write better short description 
 -in contact us page write the email and phone and address that we need 
 -link instagram and facebook and phone in whatsapp in (footer.js)
+
 ******************done******************************
 1-add icon for the languages to look better V
 2-make better popup design and better font type for the languages V
 7-changing the pages titles to hebrew or to change them based on language selected if possible V
 3-adding contact us page V
-
+10-fix the logo color to be more puble 
 fixed language button style 
 row 1 and 2 in need to fix
+9-fix the header on the phone 

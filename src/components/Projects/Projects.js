@@ -57,8 +57,8 @@ function Projects() {
               imgPaths={[homePage,employeeList, homePage2,workSchedulePage]} // Array of images for Bits-0f-C0de
               title="Manager System"
               description="A streamlined website for managing employee data, schedules, salaries, and vacation requests with visual insights for efficient workforce management."
-              status="Published" // Status of the project
-              liveUrl="https://github.com/shadi26/reservemanager"
+              status="Private" // Status of the project
+              
             />
           </Col>
           

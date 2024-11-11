@@ -253,7 +253,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 30px !important;
 }
 
 .home-section {
@@ -263,7 +263,7 @@ button:focus {
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
-  padding-top: 30px !important;
+
 }
 
 .home-content {
@@ -309,7 +309,7 @@ button:focus {
 
 .myAvtar {
   justify-content: center !important;
-  padding-top: 9em !important;
+  padding-top: 3em !important;
 }
 
 @media (max-width: 767px) {
@@ -868,4 +868,24 @@ body[dir="rtl"], body[dir="rtl"] * {
 .navbar-brand {
   max-width: none; /* Removes any constraints */
 }
+/* Apply flex layout for .navbar-header only on mobile view */
+@media (max-width: 767px) {
+  .navbar-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important; /* Ensures logo on the left, toggle on the right */
+    width: 100% !important;
+  }
+
+  /* Remove any extra margins or ordering that may interfere */
+  .navbar-header .navbar-brand {
+    margin-right: auto !important; /* Pushes the logo to the far left */
+  }
+
+  .navbar-header .navbar-toggler {
+    margin-left: auto !important; /* Pushes the toggle to the far right */
+  }
+}
+
+
 

@@ -16,7 +16,8 @@ function Type() {
         
         autoStart: true,
         loop: true,
-        deleteSpeed: 200,
+        deleteSpeed: 70,
+        delay: 80, // Adjust this to increase typing speed (lower = faster)
         
       }}
     />

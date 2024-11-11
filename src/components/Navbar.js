@@ -10,13 +10,14 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-
 import LanguageSelector from "./language-selector";
 import { useTranslation } from "react-i18next";
+
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const{t}=useTranslation()
+  const { t } = useTranslation();
+
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -35,19 +36,27 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        {/* Desktop layout: show brand separately */}
+        <Navbar.Brand href="/" className="d-none d-md-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
+
+        {/* Mobile layout: logo and toggle button in a row */}
+        <div className="d-flex d-md-none align-items-center w-100 justify-content-between">
+          <Navbar.Brand href="/" style={{ marginRight: "20px" }}>
+            {/* Inline style to control spacing on mobile */}
+            <img src={logo} className="img-fluid logo" alt="brand" />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => updateExpanded(expand ? false : "expanded")}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle>
+        </div>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -55,7 +64,6 @@ function NavBar() {
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> {t("navbar.home")}
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -80,19 +88,13 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />{" "}
                 {t("navbar.projects")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-            <LanguageSelector onLanguageSelect={() => updateExpanded(false)} />
-
-            
+              <LanguageSelector onLanguageSelect={() => updateExpanded(false)} />
             </Nav.Item>
-
-
           </Nav>
         </Navbar.Collapse>
       </Container>
