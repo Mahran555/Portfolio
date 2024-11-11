@@ -262,8 +262,9 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image expands fully in width */
+  width: 100%; /* Ensures full width */
   padding-bottom: 30px !important;
-
 }
 
 .home-content {
