@@ -1,0 +1,70 @@
+.accessibility-widget {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+  }
+  
+  .accessibility-widget.ltr {
+    right: 20px;
+  }
+  
+  .accessibility-widget.rtl {
+    left: 20px;
+  }
+  
+  .accessibility-icon {
+    background: #0066cc;
+    color: white;
+    border: 2px solid #0066cc;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .accessibility-icon:hover {
+    color: #0066cc;
+    background: #fff;
+  }
+  
+  .accessibility-panel {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 200px;
+  }
+  
+  .accessibility-panel h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  
+  .accessibility-panel button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .accessibility-panel button.active {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  
+  .reset-button {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  /* Rotate the icon for RTL direction */
+.accessibility-widget.rtl .accessibility-icon {
+  transform: rotate(180deg); /* Rotate the icon */
+}

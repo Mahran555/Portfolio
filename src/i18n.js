@@ -71,6 +71,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         succalert:"Thank you! Your message has been sent successfully, we will contact you soon.",
                         failedalert:"Failed to send message, please try again.",
                 },
+                accessibility:{
+                    title:"Accessibility Tools",
+                    increasetext:"Increase Text",
+                    decreasetext:"Decrease Text",
+                    grayscale:"Grayscale",
+                    highcont:"High Contrast",
+                    negativecont:"Negative Contrast",
+                    linksunderline:"Links Underline",
+                    readablefont:"Readable Font",
+                    reset:"Reset",
+                },
             },
         },
         ar:{
@@ -139,7 +150,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     succalert: "شكرًا لك! تم إرسال رسالتك بنجاح، سنتواصل معك قريبًا.",
                     failedalert: "فشل في إرسال الرسالة، يرجى المحاولة مرة أخرى.",
             },
-                
+            accessibility: {
+                title: "أدوات الوصول",
+                increasetext: "تكبير النص",
+                decreasetext: "تصغير النص",
+                grayscale: "تدرج الرمادي",
+                highcont: "تباين عالٍ",
+                negativecont: "تباين سلبي",
+                linksunderline: "تسطير الروابط",
+                readablefont: "خط سهل القراءة",
+                reset: "إعادة تعيين",
+            },
                 
             },
         },
@@ -209,6 +230,18 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     succalert: "תודה! ההודעה שלך נשלחה בהצלחה, נחזור אליך בקרוב.",
                     failedalert:"שליחת ההודעה נכשלה, אנא נסה שוב.",
             },
+            accessibility: {
+                title: "כלי נגישות",
+                increasetext: "הגדלת טקסט",
+                decreasetext: "הקטנת טקסט",
+                grayscale: "גווני אפור",
+                highcont: "ניגודיות גבוהה",
+                negativecont: "ניגודיות הפוכה",
+                linksunderline: "קו תחתון לקישורים",
+                readablefont: "גופן קריא",
+                reset: "איפוס",
+            },
+            
             },
         },
 

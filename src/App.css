@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+/*accisibilty /
+/* Grayscale */
+body.grayscale {
+  filter: grayscale(100%);
+}
+
+/* High Contrast */
+body.high-contrast {
+  filter: contrast(200%);
+}
+
+/* Negative Contrast */
+body.negative-contrast {
+  filter: invert(100%);
+}
+
+/* Light Background */
+body.light-background {
+  background-color: #f4f4f4 !important;
+  color: #333 !important;
+}
+
+body.light-background a {
+  color: #0066cc !important;
+}
+
+/* Underline Links */
+body.underline-links a {
+  text-decoration: underline;
+}
+
+/* Readable Font */
+body.readable-font {
+  font-family: Arial, sans-serif !important;
+}
