@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import translationIcon from "../Assets/translation.png";
-import downArrowIcon from "../Assets/down-arrow.png";
 
 const languages = [
     { code: "en", lang: "English" },
@@ -38,10 +37,9 @@ const LanguageSelector = ({ onLanguageSelect }) => {
 
     return (
         <div className="language-selector" ref={selectorRef}>
-            <img src={translationIcon} alt="Language Icon" className="language-icon" />
-            <div onClick={toggleDropdown} className="dropdown-toggle">
+            <div onClick={toggleDropdown} className="dropdown-toggle" style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
+                <img src={translationIcon} alt="Language Icon" className="language-icon" style={{ marginRight: "2px" }} />
                 {i18n.language.toUpperCase()}
-               
             </div>
             {isOpen && (
                 <div className="language-menu">

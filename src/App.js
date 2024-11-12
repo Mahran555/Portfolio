@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/contact";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./whatsapp/WhatsAppButton.js";
 
 import {
   BrowserRouter as Router,
@@ -46,6 +47,7 @@ function App() {
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
+        <WhatsAppButton /> {/* Add the WhatsApp button */}
       </div>
     </Router>
   );

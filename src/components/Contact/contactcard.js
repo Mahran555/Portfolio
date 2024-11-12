@@ -13,11 +13,13 @@ function ContactCard() {
             {t("contactpage.des2")}
             <br />
             <br />
-            <strong>{t("contactpage.email")}: </strong>example@yourdomain.com
+            <strong>{t("contactpage.email")}: </strong> s.m.cooperation.bus@gmail.com
             <br></br>
-            <strong>{t("contactpage.phone")}: </strong> +123 456 7890
+            <strong>{t("contactpage.phone")}: </strong> 
+            <a href="tel:0525296220">0525296220</a>
             <br></br>
-            <strong>{t("contactpage.address")}: </strong> 123 Your Street, City, Country
+            <strong>{t("contactpage.phone")}: </strong> 
+            <a href="tel:0525056571">0525056571</a>
             <br />
             <br />
           </p>

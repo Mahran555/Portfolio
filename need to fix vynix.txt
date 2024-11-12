@@ -1,12 +1,11 @@
 
 
 -adding some stuff in the home page to look better its small atm
--maybe the text in each page mobile view need to be orgnized better
+-the text in each page mobile view need to be orgnized better
 
 
 --------data fixes----------
--fix pictures in projects page remove write better short description 
--in contact us page write the email and phone and address that we need 
+-fix pictures in projects page remove write better short description with translation
 -link instagram and facebook and phone in whatsapp in (footer.js)
 
 ******************done******************************
@@ -18,3 +17,4 @@
 fixed language button style 
 row 1 and 2 in need to fix
 9-fix the header on the phone 
+-in contact us page write the email and phone and address that we need 
