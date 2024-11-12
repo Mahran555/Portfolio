@@ -1,7 +1,6 @@
 
 
 -adding some stuff in the home page to look better its small atm
--the text in each page mobile view need to be orgnized better
 
 
 --------data fixes----------
@@ -18,3 +17,4 @@ fixed language button style
 row 1 and 2 in need to fix
 9-fix the header on the phone 
 -in contact us page write the email and phone and address that we need 
+-the text in each page mobile view need to be orgnized better
