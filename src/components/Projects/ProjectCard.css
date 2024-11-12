@@ -76,3 +76,9 @@
     margin: 0 5px;
   }
 }
+
+.enlarged-image {
+  width: 1000x; /* Set your desired width */
+  height: 700px; /* Set your desired height */
+  object-fit: cover; /* Ensures images fit without distortion */
+}
