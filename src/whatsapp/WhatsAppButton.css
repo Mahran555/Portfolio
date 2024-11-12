@@ -44,6 +44,6 @@
   /* Media query for mobile view */
 @media (max-width: 768px) {
     .whatsapp-container {
-      bottom: 20px; /* Move the icon further down on mobile view */
+      bottom: 40px; /* Move the icon further down on mobile view */
     }
   }
