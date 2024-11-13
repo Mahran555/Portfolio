@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Card, Carousel, Modal, Button } from "react-bootstrap";
-import "./ProjectCard.css"; // Ensure your CSS file is linked
+import "./ProjectCard.css";
 
-function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
+function ProjectCard({ imgPaths, title, description, status, liveUrl, direction }) {
   const [show, setShow] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -23,9 +23,12 @@ function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
     );
   };
 
+  // Determine if RTL to apply conditional styling
+  const isRTL = direction === "rtl";
+
   return (
     <>
-      <Card className="project-card-view">
+      <Card className={`project-card-view ${isRTL ? "rtl" : ""}`}>
         <Carousel>
           {imgPaths.map((imgPath, index) => (
             <Carousel.Item key={index}>
@@ -71,7 +74,7 @@ function ProjectCard({ imgPaths, title, description, status, liveUrl }) {
           <img
             src={imgPaths[currentIndex]}
             alt="Large view"
-            className="enlarged-image"  // Apply the CSS class here
+            className="enlarged-image"
           />
           <Button variant="secondary" onClick={handleNext}>&gt;</Button>
         </Modal.Body>

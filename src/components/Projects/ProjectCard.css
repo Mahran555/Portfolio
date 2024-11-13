@@ -6,6 +6,18 @@
   filter: none !important; /* Explicitly remove any filter */
   opacity: 1 !important; /* Ensure full opacity */
   transition: none !important; /* Completely disable transition */
+  text-align: left;
+  direction: ltr;
+}
+/* RTL layout adjustments */
+.project-card-view.rtl {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Adjustments for RTL layout in carousel */
+.project-card-view.rtl .carousel-item {
+  transform: scaleX(-1); /* Flip carousel items for RTL */
 }
 
 .project-card-view:hover,
@@ -65,7 +77,6 @@
 
 .custom-modal .modal-backdrop {
   background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
-  transition: none !important; /* Disable any transition */
 }
 
 /* Mobile-specific styling for enlarged image */
@@ -78,7 +89,14 @@
 }
 
 .enlarged-image {
-  width: 1000x; /* Set your desired width */
-  height: 700px; /* Set your desired height */
-  object-fit: cover; /* Ensures images fit without distortion */
+  max-width: 90vw; /* Responsive max width relative to viewport */
+  max-height: 80vh; /* Responsive max height relative to viewport */
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+}
+/* Modal content styling for centering */
+.custom-modal .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }

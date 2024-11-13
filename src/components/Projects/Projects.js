@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-
+import { useTranslation } from "react-i18next";
 
 //manager imports
 import employeeList from "../../Assets/ManagerProject/employee list.png";
 import homePage2 from "../../Assets/ManagerProject/home page 2.png";
 import homePage from "../../Assets/ManagerProject/home page.png";
 import workSchedulePage from "../../Assets/ManagerProject/work schedule page.png";
-import { useTranslation } from "react-i18next";
+
 
 //Riyda app imports
 import login from "../../Assets/RiydaApp/login.png";
