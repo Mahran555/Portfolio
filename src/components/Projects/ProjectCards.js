@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Card, Carousel, Modal, Button } from "react-bootstrap";
 import "./ProjectCard.css";
+import { useTranslation } from "react-i18next";
 
 function ProjectCard({ imgPaths, title, description, status, liveUrl, direction }) {
   const [show, setShow] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { t } = useTranslation();
 
   const handleShow = (index) => {
     setCurrentIndex(index);
@@ -45,18 +47,31 @@ function ProjectCard({ imgPaths, title, description, status, liveUrl, direction 
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <div className="project-card-footer">
-            <p><strong>Status:</strong> {status}</p>
-            {status === "Published" && liveUrl && (
-              <Button
-                variant="primary"
-                href={liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="live-button"
-              >
-                View Live
-              </Button>
+          <div className={`project-card-footer ${!liveUrl ? "center-status" : ""}`}>
+            {status === t("prevprojects.statuspublished") && liveUrl ? (
+              <>
+                <Button
+                  variant="primary"
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="live-button"
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                    borderRadius: '20px', // Adjust this value as needed
+                    fontSize: "20px"
+
+                  }}
+                >
+                  {t("prevprojects.btnlive")}
+                </Button>
+                <p style={{ fontSize: "20px" }}><strong style={{ fontSize: "20px" }}>{t("prevprojects.statustitle")}</strong> :{status}</p>
+              </>
+            ) : (
+              <p style={{ fontSize: "20px" }}><strong style={{ fontSize: "20px" }}>{t("prevprojects.statustitle")}:</strong> :{status}</p>
             )}
           </div>
         </Card.Body>

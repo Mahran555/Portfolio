@@ -47,8 +47,8 @@ function Projects() {
             <ProjectCard
               imgPaths={[map,services, sidebar, paying, reservationsSchedule,login, serviceInfo]} // Array of images for RiydaApp
               title="Riyda App"
-              description="A convenient app for booking services like stadiums, swimming pools, and more, built using Flutter and Firebase. Users can reserve, pay securely, and view past bookings with ease"
-              status="Coming Soon" // Status of the project
+              description={t("prevprojects.riydaapp")}
+              status={t("prevprojects.statuscomingsoon")} // Status of the project
             />
           </Col>
 
@@ -56,8 +56,8 @@ function Projects() {
             <ProjectCard
               imgPaths={[homePage,employeeList, homePage2,workSchedulePage]} // Array of images for Bits-0f-C0de
               title="Manager System"
-              description="A streamlined website for managing employee data, schedules, salaries, and vacation requests with visual insights for efficient workforce management."
-              status="Private" // Status of the project
+              description={t("prevprojects.managersystem")}
+              status={t("prevprojects.statusprivate")} // Status of the project
               
             />
           </Col>
@@ -66,8 +66,8 @@ function Projects() {
             <ProjectCard
               imgPaths={[Homepage,aboutUs, contactUs, Homepage2, Homepage3, pickingTruckModel, productsPage]} // Array of images for Tmrdparts
               title="Tmrdparts Website"
-              description="A comprehensive catalog showcasing truck parts for sale, organized into easy-to-navigate categories, helping customers quickly find parts they need for various truck models."
-              status="Published" // Status of the project
+              description={t("prevprojects.tmrdparts")}
+              status={t("prevprojects.statuspublished")} // Status of the project
               liveUrl="https://tmrdparts.com"
             />
           </Col>

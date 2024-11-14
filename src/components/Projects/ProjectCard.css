@@ -31,17 +31,27 @@
 }
 
 /* Card footer styles */
+/* Default footer styling for status and button */
 .project-card-footer {
   padding: 10px;
   background-color: transparent;
   border-top: 1px solid #a24dd386;
-  text-align: center;
   margin-top: auto;
   width: 100%;
-  filter: none !important; /* Prevent blur */
-  opacity: 1 !important; /* Prevent opacity change */
-  transition: none !important; /* Disable any transition */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: none !important;
+  opacity: 1 !important;
+  transition: none !important;
 }
+
+/* Center the status text if there is no live button */
+.project-card-footer.center-status {
+  justify-content: center; /* Centers the status text */
+}
+
+
 
 /* Styling for buttons and text inside the card body */
 .project-card-view .card-body {
@@ -63,6 +73,12 @@
   filter: none !important; /* Ensure no blur */
   opacity: 1 !important; /* Ensure full opacity */
   transition: none !important; /* Disable transition */
+  align-self: center; /* Center align text */
+  font-family: 'Verdana', sans-serif; /* Change font family */
+}
+.live-button {
+  width: 100px;
+
 }
 
 /* Remove any blur or opacity from modal content as well */

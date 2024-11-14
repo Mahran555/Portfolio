@@ -82,6 +82,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     readablefont:"Readable Font",
                     reset:"Reset",
                 },
+                prevprojects:{
+                    riydaapp:"A convenient app for booking services like stadiums, swimming pools and more. offering secure payments and a simple way to manage reservations.",
+                    managersystem:"A streamlined system for managing employee data, schedules, salaries, and vacation requests, offering visual insights to enhance efficient workforce management",
+                    tmrdparts:"A comprehensive catalog showcasing truck parts for sale, organized into easy-to-navigate categories, helping customers quickly find parts they need for various truck models.",
+                    
+                   statustitle:"Status",
+                   statusprivate:"Private",
+                   statuscomingsoon:"Coming Soon",
+                   statuspublished:"Published",
+                   btnlive:"View", 
+                },
             },
         },
         ar:{
@@ -160,6 +171,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 linksunderline: "تسطير الروابط",
                 readablefont: "خط سهل القراءة",
                 reset: "إعادة تعيين",
+            },
+            prevprojects:{
+                riydaapp:"تطبيق مريح لحجز الخدمات مثل الملاعب، المسابح وغيرها، مع توفير خدمات دفع آمنة وطريقة بسيطة لإدارة الحجوزات",
+                managersystem:"نظام مبسط لإدارة بيانات الموظفين، الجداول، الرواتب وطلبات الإجازات، يوفر رؤى بصرية لتعزيز كفاءة إدارة القوى العاملة",
+                tmrdparts:"كتالوج شامل يعرض قطع غيار الشاحنات للبيع، منظم في فئات سهلة التصفح، مما يساعد العملاء على العثور بسرعة على القطع التي يحتاجونها لموديلات الشاحانات المختلفة",
+           
+                statustitle:"الحالة",
+                statusprivate:"خاص",
+                statuscomingsoon:"قريباً",
+                statuspublished:"منشور",
+                btnlive:"عرض", 
             },
                 
             },
@@ -240,6 +262,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 linksunderline: "קו תחתון לקישורים",
                 readablefont: "גופן קריא",
                 reset: "איפוס",
+            },
+            prevprojects:{
+                riydaapp:"אפליקציה נוחה להזמנת שירותים כמו אצטדיונים, בריכות שחייה ועוד, עם תשלומים מאובטחים ודרך פשוטה לניהול הזמנות",
+                managersystem:"מערכת יעילה לניהול נתוני עובדים, לוחות זמנים, משכורות ובקשות חופשה, המספקת תובנות ויזואליות לשיפור ניהול כוח האדם",
+                tmrdparts:"קטלוג מקיף המציג חלקי חילוף למשאיות למכירה, מסודר בקטגוריות נוחות לניווט, ועוזר ללקוחות למצוא במהירות את החלקים שהם צריכים עבור דגמי משאיות שונים",
+           
+                statustitle:"סטטוס",
+                statusprivate:"פרטי",
+                statuscomingsoon:"בקרוב",
+                statuspublished:"פורסם",
+                btnlive:"צפייה", 
             },
             
             },
