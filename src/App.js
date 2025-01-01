@@ -7,6 +7,8 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/contact";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./components/privacypolicy/CoWallet-Coupon-Wallet";
+import ListaPolicy from "./components/privacypolicy/Lista-shopping-List";
 import WhatsAppButton from "./whatsapp/WhatsAppButton.js";
 
 import {
@@ -44,6 +46,8 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacypolicy-CoWallet" element={<PrivacyPolicy />} />
+          <Route path="/privacypolicy-Lista" element={<ListaPolicy />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

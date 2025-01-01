@@ -1,0 +1,47 @@
+.privacy-policy-section {
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background: var(--section-background-color, #f9f9f9);
+    color: #333;
+  }
+  
+  .privacy-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+  }
+  
+  .privacy-header {
+    background: var(--primary-color, #0073e6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .privacy-title {
+    color: var(--primary-color, #0073e6);
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .privacy-subtitle {
+    color: var(--secondary-color, #555);
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  .privacy-link {
+    color: var(--primary-color, #0073e6);
+    text-decoration: none;
+  }
+  
+  .privacy-link:hover {
+    text-decoration: underline;
+  }
+  /* privacy.css */
+.contact-page-label {
+    color: var(--imp-text-color, white);
+    font-weight: bold;
+  }
+  
